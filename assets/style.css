@@ -1,0 +1,630 @@
+
+/*--- Import of google font Monserrat--- */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+
+/*---- Global Variables declaration -----*/
+:root {
+    --body: #E3E9E9;
+    --text-colour: #808586;
+    --header-bg: #133C55;
+    --header-title: # ;
+    --links: #D9DDDF;
+    --link-hover: #fff;
+    --banner: #c9c5c5;
+    --border-colour: #AFB7BB;
+    --box-shadow: #0000004d;
+    --work-bg: #bba9d8;
+    --box-col: #54428e;
+    --skill-col:#BFC0C0;
+    --h2-col: #2D3142;
+    --span-col: #5ea7e2;
+    --toggler-bg: #000;
+    --darkslategray: #2f4f4f;
+    --burger-mnu: #406774;
+    --btn-CV: #3f3c3c;
+}
+
+/*--- All element selectors ----*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: var(--text-colour);    
+}
+/* Body element Selector set to position Relative and overflow x is set to hidden */
+body{ 
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--body);
+    position: relative;
+    width: 100%;
+    height: 100vh;;
+    overflow-x: hidden;
+}
+
+/* Header element Selector. Box shadow added, element set to display as Flexbox*/
+header {
+    background-color: var(--header-bg);
+    box-shadow: 5px 5px 30px var(--box-shadow);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+/* Heading h1 element selector set to 100px margin left*/
+header h1{
+    color: var(--header-title);
+    margin-left: 100px;
+}
+
+/* Element selectors h1, h2, and anchor set to uppercase */
+h1, h2, nav li a {
+    text-transform: uppercase;
+}
+
+/* h2 element selector set to 1.6 rem on font size */
+h2 {
+    color: var(--h2-col);
+    font-size: 1.6rem;
+}
+
+/* Sets colour for h3 element selector */
+h3{ 
+    color: var(--links);
+}
+
+/* Sets colour on span element selector */
+span{
+   color: var(--span-col); 
+}
+
+/* --- Nav selector element ---*/
+
+/* Toggler for burger menu visibility is set to hidden*/
+.toggler {
+    visibility: hidden;
+}
+
+/* Burger menu  set to none and floats right*/
+.burger-menu {
+    float: right;
+    margin-right: 50px;
+    display: none;
+}
+
+/* nav unordered list and buttons sets to no list style, and Flexbox */
+nav ul, .button{
+    display: flex;  
+    list-style: none;
+}
+
+/* margin right on anchor */
+nav li a {
+    color: var(--links);
+    margin-right: 40px;
+}
+
+/* Colour and undeline sets on anchor in hover state */
+nav li a:hover {
+    color: var(--link-hover);
+    text-decoration: underline;
+}
+
+/* Sets margin right on last anchor element selector */
+nav li:last-child{
+    margin-right: 50px;
+}
+
+/* Image profile set to absolute*/
+.profile-pic {
+    width: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top:80px;
+    left: 180px;
+}
+
+/*---- main section ----*/
+main{
+    margin-top: 200px;
+}
+
+/* Id about set to Flexbox */
+#about {
+    border: 1px solid var(--border-colour);
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px var(--box-shadow);
+    display: flex;
+    margin-left: 5%;
+    padding: 20px;
+    width: 50%;
+}
+
+/*  */
+#about h2 {
+    margin: 50% 5%;
+}
+
+.para {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: left;
+    padding: 50px;
+    margin-right: 50px;
+}
+
+.para p {
+    display:inline;
+    width: 100%;
+    letter-spacing: 0.2rem;
+    line-height: 1.8rem;
+}
+
+.para p:nth-of-type(1) {
+    color: var(--header-bg);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.para p:nth-of-type(2) {
+    font-size: 1.2rem;
+    color: var(--darkslategray);
+}
+
+#myWork {
+    background-color: var(--work-bg);
+    border: 1px solid var(--border-colour);
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px var(--box-shadow);
+    margin: 2% 0 0 25%;
+    width: 70%;
+    display: flex;
+
+}
+.my-work{
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+    margin:50px 60px 0 0;
+    padding: 30px 0 0 0;
+}
+
+.box-container, .tile-contact{
+    display:flex;
+    width: 80%;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 50px 0 20px 0;
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+    margin: 5px 15px 10px 5px;
+    background-color: var(--box-col);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 2;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px var(--box-shadow);
+}
+
+.btn {
+    position:absolute;
+    bottom: 15px;
+    padding: 3px 10px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+}
+
+.btn-hire, .btn-cv {
+    border:none;
+    outline: none;
+    border-radius: 10px;
+    width: 100px;
+    margin: 15px 10px 0 0;
+    padding: 5px;
+}
+
+.btn-cv{
+    background-color: var(--btn-CV);
+    color: var(--links);
+}
+
+.btn:active, .btns:active , .btns:hover{
+    transform: scale(1.1);
+
+}
+
+.box-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Skills */
+#skills {
+   background-color: var(--skill-col);
+    border: 1px solid var(--border-colour);
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px var(--box-shadow);
+    display: flex;
+    margin: 2% 0 5% 5%;
+    padding: 20px;
+    width: 30%; 
+    height: 200px;
+    position: relative;
+}
+
+.skill-title {
+    margin: 20px 0 0 20px; 
+}
+
+.lang-description {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+}
+
+.sqr-list::before{
+    list-style-type:square;
+}
+
+.sqr-list li{
+    color: var(--box-col);
+    font-weight: 500;
+}
+
+
+/* Contact */
+#contact {
+    background-color: var(--skill-col);
+    border: 1px solid var(--border-colour);
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px var(--box-shadow);
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 0 5% 45%;
+    padding: 20px;
+    width: 50%;
+    height: 180px;
+    position: relative;
+}
+
+.contact-me {
+    margin: 20px 0 0 20px;
+}
+
+.tile-contact {
+    display: flex;
+    flex-direction:column;
+}
+
+.contact-icon {
+    position:absolute;
+    top: 15%;
+    left: 30%;
+    list-style: none;
+}
+
+.social-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    list-style: none;
+}
+
+.social-icon a i{
+    color: var(--header-bg);
+}
+
+.tile-contact ul li{
+    padding: 20px;
+}
+/* Projects */
+#portfolio-container {
+    background-color: var(--skill-col);
+    border: 1px solid var(--border-colour);
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px var(--box-shadow);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 2% 0 5% 5%;
+    padding: 20px;
+    width: 60%; 
+    position: relative;
+}  
+
+#portfolio-container h2 {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+.portfolio {
+     border-radius: 20px;
+     margin:10% auto 2%;  
+}
+
+.proj {
+    border-radius:20px;
+}
+
+.proj:hover {
+    transform: scale(1.1);
+}
+
+figcaption {
+   text-align: center;
+}
+
+
+/* Footer */
+footer{
+    background-color: var(--header-bg);
+    height: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    font-size:10px;
+}
+
+
+/* Media screen 1155px */
+@media screen and (max-width: 1155px) {
+
+    .profile-pic {
+        left: 13%;
+    }
+
+    header h1 {
+        font-size: 1.5rem
+    }
+
+     h2 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .para p:nth-of-type(1) {
+    color: var(--header-bg);
+    font-size: 1.1rem;
+    font-weight: 700;
+    }
+
+    .para p:nth-of-type(2) {
+    font-size: 1rem;
+    color: var(--darkslategray);
+    }
+
+    .my-work {
+        justify-content: flex-start;
+    }
+
+    .my-work h2 {
+        margin-left: 20px;
+    }
+
+    .portfolio {
+        margin:10% auto 5px;  
+    }
+
+    nav li a{
+        font-size: 0.8rem
+    }
+
+    #about, #myWork, #skills, #contact, #portfolio-container {
+        width: 90%;
+    }
+
+    #myWork, #skills, #contact, #portfolio-container {
+        margin: 2% auto;
+    }  
+}
+
+/* Media screen 960px */
+@media screen and (max-width: 965px){
+    *{
+        overflow-x: hidden
+    }
+
+    nav > ul{
+        display: none;   
+    }
+
+    .burger-menu:hover {
+        cursor: pointer;
+        background-color: var(--burger-mnu);
+    }
+
+    .toggler:checked ~ nav ul{
+        display: block;
+        position:absolute;
+        top:100px;
+        right: 0px;
+        background-color: var(--toggler-bg);
+        height: 200px;
+        width: 30%;
+    }
+
+    nav ul li {
+        padding: 2.5%;
+    }
+
+    .burger-menu {
+        display: block;
+        font-size: 30px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+        margin: 0 auto;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .profile-pic {
+        left: 35%
+    }
+
+    .para p:nth-of-type(1) {
+    color: var(--header-bg);
+    font-size: 16px;
+    font-weight: 700;
+    }
+
+    .para p:nth-child(2) {
+    font-size: 15px;
+    color: var(--darkslategray);
+    }
+
+    .para p:nth-child(3) {
+    font-size: 15px;
+    color: var(--darkslategray);
+    }
+
+    .my-work {
+        margin: -5px 0 0 30px;
+        height: 100px;
+    }
+
+    .box-container {
+        flex-direction: column;
+    }
+
+    .box{
+        margin: 60px auto;
+        width: 100%;
+    }
+
+    .portfolio{
+        margin: 18% auto 1px ;
+    }
+
+    footer{
+        overflow: hidden;
+    }
+}
+
+ @media screen and (max-width: 500px) { 
+
+    .profile-pic {
+        left: 30%;
+    }
+
+    #about, #myWork, #skills, #contact, #portfolio-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-container {
+        flex-direction: column;
+    }
+
+    .box {
+
+        justify-content: center;
+        align-items: center;
+        margin: 5px auto;
+    }
+
+    .skill-title{
+        margin-top: -150px;
+    }
+    .contact-me {
+        margin-top: -70px;
+    }
+
+    .social-icon {
+        top:70%;
+        left: 25%;
+    }
+
+    #portfolio-container h2{
+        top: 15px;
+        left:40%;
+    }
+}
+
+@media screen and (max-width: 375px) { 
+
+    *{
+        overflow-x: hidden;
+    }
+
+    .profile-pic {
+        left: 30%;
+    }
+
+    #about, #myWork, #skills, #contact, #portfolio-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .my-work{
+       width: 100%;
+       margin: 0 auto;
+       justify-content: center;
+    }
+
+    .box-container {
+        flex-direction: column;
+        margin-right: 0px;
+    }
+    .box {
+        flex-grow: 1;
+        margin: 5px auto;
+    }
+
+    .skill-title{
+        margin-top: -150px;
+    }
+
+    .lang-description{
+        margin: 0 auto;
+        left: 45%;
+    }
+    #contact {
+        overflow: hidden;
+    }
+
+    .contact-me {
+        margin-top: -70px;
+    }
+
+    .social-icon {
+        top:70%;
+        left: 25%;
+    }
+
+    #portfolio-container h2{
+        top: 15px;
+        left:35%;
+    }
+
+    .portfolio{
+        margin-top: 25px;
+        width: 100%;
+    }
+}
+
+
+   
