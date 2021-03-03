@@ -1,5 +1,5 @@
 # Project Name: Portfolio
-__
+___
 ## OVERVIEW
 
 This portfolio is to showcase my skills and talents for employers looking for a part-time or full-time position to fill.
@@ -24,3 +24,11 @@ Some of the features on this webpage includes:
 This webpage can be viewed on a normal screen size, and also on 1155px, 965px, 565px, and 375px.
 
 In screen size 565px, and 375px user is presented with a burger menu. When clicked, a navigation bar is dropped on the top right side of the screen.
+
+___
+
+## Github links
+- https://github.com/and1roxx43/myPortfolio
+
+## Webpage URL
+- https://and1roxx43.github.io/myPortfolio/
