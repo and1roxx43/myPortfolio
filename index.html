@@ -17,6 +17,8 @@
         <section>
             <input type="checkbox" id="toggle" class="toggler">
         <label for="toggle" class="burger-menu"><i class='fa fa-bars'></i></label>
+
+        <!-- navigation bar -->
         <nav>
             <ul>
                 <li><a href="#about">About Me</a></li>
@@ -28,7 +30,11 @@
         </section>
         <img class="profile-pic" src="./assets/images/Andy1.jpeg" alt="Andrew picture profile">
     </header>
+
+<!-- End of Header element -->
     <main>
+
+        <!-- First article about the author -->
         <article id="about">
             <section class="about-me">
                 <h2>About me</h2> 
@@ -42,10 +48,11 @@
                     <button class="btns btn-cv"><a href="#" target="_blank">Download CV</a></button>
                     <button class="btns btn-hire"><a href="#contact">Hire Me</a></button>
                 </section>
-
             </section>
         </article>
-           
+           <!-- End of first article -->
+
+         <!-- Link to portfolio section -->
         <article id="myWork">
             <section class="my-work">
                 <h2>My Work</h2> 
@@ -65,7 +72,9 @@
                 </section>
             </section>
         </article>
+        <!-- End of my work section -->
 
+        <!-- Skills section starts here  -->
         <article id="skills">
             <section class="skill-title">
                 <h2>Skills</h2>
@@ -82,11 +91,47 @@
                 </ul>
             </section>   
         </article>
+        <!-- Skills section ends -->
 
+        <!-- Portfolio section starts here -->
+
+        <article id="portfolio-container">
+            <h2>Portfolio</h2>
+            <section class="portfolio">
+                <a href="https://and1roxx43.github.io/excursion/" target="_blank">
+                    <img class="proj" src="./assets/images/Excursion.png" alt="Excursion picture">
+                    <figcaption>Excursion</figcaption>
+                </a>
+               
+            </section>
+            <section class="portfolio"> 
+                <a href="https://and1roxx43.github.io/Portfolio_Project_one/" target="_blank">
+                    <img class="proj" src="./assets/images/CSS_Snippet_Cheatsheet.png" 
+                    alt="CSS Snippet Cheatsheet">
+                    <figcaption>CSS Snippet Cheatsheet</figcaption>
+                </a>
+            </section>
+            <section class="portfolio">     
+                <a href="https://and1roxx43.github.io/HoriseonMarketing/" target="_blank">
+                    <img class="proj" src="./assets/images/Horiseon_Marketing.png" alt="Horiseon marketing logo">
+                    <figcaption>Horiseon Marketing</figcaption>
+                </a>
+            </section>
+        </article>
+        <!-- Portfolio section end here -->
+
+        <!-- Contact starts here -->
         <article id="contact">
             <section class="contact-me">
                 <h2>Contact</h2>
             </section>
+
+            <form class="user-input" action="#">
+                <input type="text" id="firstname" name="firstname" placeholder="First Name" maxlength="15">
+                <input type="text" name="surname" id="surname" placeholder="Last Name" maxlength="20">
+                <input type="submit" value="Submit">
+
+            </form>
             <section class="tile-contact">
                 <ul class="contact-icon">
                     <li><i class='fa fa-envelope'></i><a href="mailto:and1roxx43@gmail.com"> E-Mail</a></li>
@@ -99,34 +144,14 @@
                 </ul>
             </section>
         </article>
+        <!-- Contact ends here -->
     </main>
+    <!-- Main section ends here -->
 
-    <section id="portfolio-container">
-        <h2>Portfolio</h2>
-        <aside class="portfolio">
-            <a href="https://and1roxx43.github.io/excursion/" target="_blank">
-                <img class="proj" src="./assets/images/Excursion.png" alt="Excursion picture">
-                <figcaption>Excursion</figcaption>
-            </a>
-           
-        </aside>
-        <aside class="portfolio"> 
-            <a href="https://and1roxx43.github.io/Portfolio_Project_one/" target="_blank">
-                <img class="proj" src="./assets/images/CSS_Snippet_Cheatsheet.png" 
-                alt="CSS Snippet Cheatsheet">
-                <figcaption>CSS Snippet Cheatsheet</figcaption>
-            </a>
-        </aside>
-        <aside class="portfolio">     
-            <a href="https://and1roxx43.github.io/HoriseonMarketing/" target="_blank">
-                <img class="proj" src="./assets/images/Horiseon_Marketing.png" alt="Horiseon marketing logo">
-                <figcaption>Horiseon Marketing</figcaption>
-            </a>
-        </aside>
-    </section>
-    
+    <!-- Footer starts here -->
     <footer>
         <p>Andrew Quenette Profile &copy;  2021</p>
      </footer>
+     <!-- Footer ends here -->
 </body>
 </html>

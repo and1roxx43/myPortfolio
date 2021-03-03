@@ -130,7 +130,7 @@ main{
     margin-top: 200px;
 }
 
-/* Id about set to Flexbox */
+/* about me main section set to Flexbox */
 #about {
     border: 1px solid var(--border-colour);
     border-radius: 20px;
@@ -141,21 +141,29 @@ main{
     width: 50%;
 }
 
-/*  */
-#about h2 {
-    margin: 50% 5%;
+.about-me {
+    width:250px;
 }
 
-.para {
-    display:flex;
+/* Margin sets on h2 element selector */
+#about h2 {
+    margin: 25% 5%;
+    width: 100%;
+}
+
+/* Sets Flexbox para class*/
+
+.para{   
+    display:flex; 
     flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
     text-align: left;
     padding: 50px;
-    margin-right: 50px;
+    margin-left: 20px;
 }
 
+/* Sets spacing for paragraph in About me paragraphs */
 .para p {
     display:inline;
     width: 100%;
@@ -163,37 +171,33 @@ main{
     line-height: 1.8rem;
 }
 
+/* Sets font size on first paragraph in About Me */
 .para p:nth-of-type(1) {
     color: var(--header-bg);
     font-size: 1.5rem;
     font-weight: 700;
 }
 
+/* Sets font size on second paragraph in About Me */
 .para p:nth-of-type(2) {
     font-size: 1.2rem;
     color: var(--darkslategray);
 }
 
+/* Sets */
 #myWork {
-    background-color: var(--work-bg);
-    border: 1px solid var(--border-colour);
-    border-radius: 20px;
-    box-shadow: 2px 2px 12px var(--box-shadow);
-    margin: 2% 0 0 25%;
     width: 70%;
-    display: flex;
-
 }
 .my-work{
-    display: flex;
+    display:flex;
     justify-content: flex-end;
     width: 20%;
     margin:50px 60px 0 0;
-    padding: 30px 0 0 0;
+    padding: 5px 0 0 0;
 }
 
 .box-container, .tile-contact{
-    display:flex;
+    display: flex;
     width: 80%;
     justify-content: flex-start;
     align-items: flex-end;
@@ -201,11 +205,11 @@ main{
 }
 
 .box {
+    display:flex;
     width: 300px;
     height: 200px;
     margin: 5px 15px 10px 5px;
     background-color: var(--box-col);
-    display: flex;
     justify-content: center;
     align-items: center;
     flex-grow: 2;
@@ -243,22 +247,15 @@ main{
 }
 
 .box-container{
-    display: flex;
     flex-wrap: wrap;
 }
 
 /* Skills */
 #skills {
-   background-color: var(--skill-col);
-    border: 1px solid var(--border-colour);
-    border-radius: 20px;
-    box-shadow: 2px 2px 12px var(--box-shadow);
-    display: flex;
-    margin: 2% 0 5% 5%;
-    padding: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
     width: 30%; 
     height: 200px;
-    position: relative;
 }
 
 .skill-title {
@@ -267,12 +264,13 @@ main{
 
 .lang-description {
     position: absolute;
-    top: 25%;
+    top: 15%;
     left: 50%;
 }
 
-.sqr-list::before{
-    list-style-type:square;
+.sqr-list{
+    list-style-type: square;
+    line-height: 1.5;
 }
 
 .sqr-list li{
@@ -280,45 +278,124 @@ main{
     font-weight: 500;
 }
 
-
-/* Contact */
-#contact {
+/* ids that shares the same setting */
+#portfolio-container, 
+#skills,
+#contact,
+#myWork 
+  {
     background-color: var(--skill-col);
     border: 1px solid var(--border-colour);
     border-radius: 20px;
     box-shadow: 2px 2px 12px var(--box-shadow);
-    display: flex;
-    justify-content: space-between;
-    margin: 2% 0 5% 45%;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 2% 0 5% 5%;
     padding: 20px;
-    width: 50%;
-    height: 180px;
+    width: 90%; 
     position: relative;
 }
 
+/* Portfolio h2 sets to absolute */
+#portfolio-container h2 {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+/* portfolio */
+.portfolio {
+     border-radius: 20px;
+     margin:10% auto 2%;  
+}
+
+/* Project images */
+.proj {
+    border-radius:20px;
+}
+
+/* Images project when in hover state */
+.proj:hover {
+    transform: scale(1.1);
+}
+
+/* caption for project images */
+figcaption {
+   text-align: center;
+}
+
+/* Contact */
+#contact {
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 70%;
+    height: 200px;
+}
+
+/* contact h2 */
+#contact h2 {
+    margin-top: -25px;
+}
+
+/* form */
+.user-input{
+    margin-left: 5%;
+     width: 100%;
+}
+
+/* form input */
+.user-input input{
+    border: none;
+    border-radius: 15px;
+    display: block;
+    margin-bottom: 5px;
+    padding: 8px 6px;
+    outline: none;
+}
+
+/* set width on both input element selector */
+.user-input input[type=text], 
+.user-input input[type=submit] {
+    width: 100%;   
+}
+
+/* submit button */
+.user-input input[type=submit] {
+    background-color: var(--btn-CV);
+    color:#fff;
+}
+
+/* set a border when input element is focused */
+.user-input input[type=text]:focus {
+    border: 1px solid #fec107;
+}
+
+/* Contact */
 .contact-me {
     margin: 20px 0 0 20px;
 }
 
 .tile-contact {
-    display: flex;
+    display:flex;
     flex-direction:column;
 }
 
 .contact-icon {
+    display:flex;
     position:absolute;
-    top: 15%;
-    left: 30%;
+    top: 80%;
+    left: 18%;
     list-style: none;
 }
 
 .social-icon {
-    display: flex;
+    display:flex;
     flex-direction: row;
     justify-content: center;
     position: absolute;
-    top: 60%;
-    left: 60%;
+    top: 75%;
+    left: 45%;
     list-style: none;
 }
 
@@ -329,49 +406,13 @@ main{
 .tile-contact ul li{
     padding: 20px;
 }
-/* Projects */
-#portfolio-container {
-    background-color: var(--skill-col);
-    border: 1px solid var(--border-colour);
-    border-radius: 20px;
-    box-shadow: 2px 2px 12px var(--box-shadow);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 2% 0 5% 5%;
-    padding: 20px;
-    width: 60%; 
-    position: relative;
-}  
-
-#portfolio-container h2 {
-    position: absolute;
-    top: 5%;
-    left: 5%;
-}
-
-.portfolio {
-     border-radius: 20px;
-     margin:10% auto 2%;  
-}
-
-.proj {
-    border-radius:20px;
-}
-
-.proj:hover {
-    transform: scale(1.1);
-}
-
-figcaption {
-   text-align: center;
-}
 
 
 /* Footer */
 footer{
     background-color: var(--header-bg);
     height: 50px;
+    margin-top: 5%;
     padding: 20px;
     text-align: center;
 }
@@ -384,10 +425,12 @@ footer p {
 /* Media screen 1155px */
 @media screen and (max-width: 1155px) {
 
+    /* change position of image profile */
     .profile-pic {
         left: 13%;
     }
 
+    /* change font size for h1, h2, p */
     header h1 {
         font-size: 1.5rem
     }
@@ -400,17 +443,20 @@ footer p {
         font-size: 14px;
     }
 
+    /* set first p element selector font size and colour and font weight*/
     .para p:nth-of-type(1) {
     color: var(--header-bg);
     font-size: 1.1rem;
     font-weight: 700;
     }
 
+    /* set 2nd p element selector font size and colour */
     .para p:nth-of-type(2) {
     font-size: 1rem;
     color: var(--darkslategray);
     }
 
+    /* set position on my-work class */
     .my-work {
         justify-content: flex-start;
     }
@@ -423,34 +469,51 @@ footer p {
         margin:10% auto 5px;  
     }
 
+    /* change navigation font size */
     nav li a{
         font-size: 0.8rem
     }
 
+    /* set width on all ids */
     #about, #myWork, #skills, #contact, #portfolio-container {
         width: 90%;
     }
 
+    /* set margin on ids */
     #myWork, #skills, #contact, #portfolio-container {
         margin: 2% auto;
     }  
+
+    /* set square bullet type on skills list */
+    .sqr-list{
+    list-style-type: square;
+    }
+
+    /* set form size */
+    .user-input{
+    width: 100%;
+    }
 }
 
-/* Media screen 960px */
+/* Media screen less than 965px */
 @media screen and (max-width: 965px){
+    /* hide overflow */
     *{
         overflow-x: hidden
     }
 
+    /* set navigation to none */
     nav > ul{
         display: none;   
     }
 
+    /* set pointer on burger menu */
     .burger-menu:hover {
         cursor: pointer;
         background-color: var(--burger-mnu);
     }
 
+    /* set properties on burger menu when clicked */
     .toggler:checked ~ nav ul{
         display: block;
         position:absolute;
@@ -461,15 +524,18 @@ footer p {
         width: 30%;
     }
 
+    /* set padding on nav list */
     nav ul li {
         padding: 2.5%;
     }
 
+    /* set display property on burger menu */
     .burger-menu {
         display: block;
         font-size: 30px;
     }
 
+    /* set font size on heading and maargin */
     header h1 {
         font-size: 1.5rem;
         margin: 0 auto;
@@ -479,65 +545,120 @@ footer p {
         font-size: 1rem;
     }
 
+    /* change location of profile picture */
     .profile-pic {
         left: 35%
     }
 
+    /* Set colour, font size and font weight on first p in About me */
     .para p:nth-of-type(1) {
     color: var(--header-bg);
     font-size: 16px;
     font-weight: 700;
     }
 
+    /* Set colour, font size on second p in About me */
     .para p:nth-child(2) {
     font-size: 15px;
     color: var(--darkslategray);
     }
 
+    /* Set colour, font size on third p in About me */
     .para p:nth-child(3) {
     font-size: 15px;
     color: var(--darkslategray);
     }
 
+    /* set margin on class my-work */
     .my-work {
-        margin: -5px 0 0 30px;
+        margin: 55px 0 0 30px;
         height: 100px;
     }
 
+    /* set position on box container */
     .box-container {
         flex-direction: column;
+        margin: 0 auto;
     }
 
+    /* set position and width on box class */
     .box{
         margin: 60px auto;
         width: 100%;
     }
 
+    /* set position on id portfolio-container and myWork */
+    #portfolio-container, #myWork{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    /* set margin on portfolio */
     .portfolio{
         margin: 18% auto 1px ;
     }
 
+    /* set position on contact */
+    #contact {
+        flex-direction: column;
+        height: auto;
+    }
+
+    /* set position on contact h2 */
+    #contact h2 {
+        margin: 18px;
+    }
+
+    /* set width on form */
+    .user-input{
+    width: 90%;
+    }
+
+    /* set position on contact icons */
+    .contact-icon {
+        left: 5%;
+    }
+
+    /* set overflow to hidden */
     footer{
         overflow: hidden;
     }
 }
 
- @media screen and (max-width: 500px) { 
+/* -- Media screen less than 565px --- */
 
+ @media screen and (max-width: 565px) { 
+     /* set all element to centre */
+     *{
+         text-align: center;
+     }
+
+     /* set position on picture profile */
     .profile-pic {
         left: 30%;
     }
 
+    /* set position on ids */
     #about, #myWork, #skills, #contact, #portfolio-container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
+    /* set position on class my-work */
+    .my-work {
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* set direction on box-container */
     .box-container {
         flex-direction: column;
     }
 
+    /* set position on box class */
     .box {
 
         justify-content: center;
@@ -545,83 +666,186 @@ footer p {
         margin: 5px auto;
     }
 
-    .skill-title{
-        margin-top: -150px;
+    /* set height on skills */
+    #skills {
+        height:30vh;
     }
+
+    /* set position on class skill-title */
+    .skill-title{
+        margin-top: -200px;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* set position on skills code language */
+    .lang-description {
+        position:absolute;
+        width: 100%;
+        top:70px;
+        left: 1%;
+    }
+
+    /* set position on contact and hide overflow */
+     #contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        flex-direction: column;
+        height:35vh;
+    } 
+
+    /* set width on form */
+    .user-input{
+        width: 100%;
+    }
+
+    /* set position on class contact-me */
     .contact-me {
         margin-top: -70px;
     }
 
+    /* set position on class social-icon */
     .social-icon {
         top:70%;
-        left: 25%;
+        left: 35%;
     }
 
+     /* set position on class contact-icon */
+    .contact-icon {
+        top: 55%;
+        left: 30%;
+    }
+
+     /* set position on class tile-contact*/
+    .tile-contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+     /* set position on portfolio-container h2 */
     #portfolio-container h2{
         top: 15px;
         left:40%;
     }
 }
 
+/* --- Media screen for screen less than 375px --- */
+
 @media screen and (max-width: 375px) { 
 
+    /* set overflow to hidden */
     *{
         overflow-x: hidden;
     }
 
-    .profile-pic {
-        left: 30%;
+    /* set position on drop down navigation on burger menu */
+
+    .toggler:checked ~ nav ul{
+        display: block;
+        position:absolute;
+        top:100px;
+        background-color: var(--toggler-bg);
+        height: 200px;
+        width: 50%;
+
     }
 
+    /* set position on navigation */
+
+    nav ul li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* set position on profile picture */
+    .profile-pic {
+        left: 8%;
+    }
+
+    /* set position on ids */
     #about, #myWork, #skills, #contact, #portfolio-container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
+    /* set position on class my-work */
     .my-work{
        width: 100%;
        margin: 0 auto;
        justify-content: center;
     }
 
+    /* set position on class box-container */
     .box-container {
         flex-direction: column;
-        margin-right: 0px;
+        margin: 0px;
     }
+
+    /* set position and growth property on class box */
     .box {
         flex-grow: 1;
         margin: 5px auto;
     }
 
+    /* set position on class skill-title */
     .skill-title{
         margin-top: -150px;
     }
 
+    /* set position on class lang-description */
     .lang-description{
         margin: 0 auto;
-        left: 45%;
-    }
-    #contact {
-        overflow: hidden;
     }
 
+    /* set over to hidden and height on contact */
+    #contact {
+        overflow: hidden;
+        height: 40vh;
+    }
+
+    /* set width on form */
+   .user-input{
+    width: 100%;
+    }
+
+    /* set position on class contact-me */
     .contact-me {
         margin-top: -70px;
     }
 
+    /* set position on class social-icon */
     .social-icon {
-        top:70%;
-        left: 25%;
+        top: 70%;
+        left: 30%;
     }
 
+
+    /* set position on portfolio */
+    #portfolio-container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* set position on portfolio-container h2 */
     #portfolio-container h2{
         top: 15px;
-        left:35%;
+        flex-direction: column;
+        align-items: center;
     }
 
+    /* set position on class portfolio */
     .portfolio{
-        margin-top: 25px;
+        margin: 25px auto;
+        width: 100%;
+    }
+
+    /* set width on project images */
+    .proj {
         width: 100%;
     }
 }
