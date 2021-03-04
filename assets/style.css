@@ -186,10 +186,18 @@ main{
     color: var(--darkslategray);
 }
 
-/* Sets */
+/* Sets color, margin, border, width, display property, and
+ box-shadow on myWork */
 #myWork {
+    background-color: var(--work-bg);
+    border: 1px solid var(--border-colour);
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px var(--box-shadow);
+    margin: 2% 0 0 25%;
     width: 70%;
+    display: flex;
 }
+
 .my-work{
     display:flex;
     justify-content: flex-end;
@@ -252,12 +260,22 @@ main{
     flex-wrap: wrap;
 }
 
-/* Skills */
+/* Sets color, margin, border, width, display property, and
+ box-shadow on Skills */
 #skills {
+    display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    background-color: var(--skill-col);
+    border: 1px solid var(--border-colour);
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px var(--box-shadow);
+    display: flex;
+    margin: 2% 0 5% 5%;
+    padding: 20px;
     width: 30%; 
     height: 200px;
+    position: relative;
 }
 
 .skill-title {
@@ -280,12 +298,9 @@ main{
     font-weight: 500;
 }
 
-/* ids that shares the same setting */
-#portfolio-container, 
-#skills,
-#contact,
-#myWork 
-  {
+/* Sets color, margin, border, width, display property, and
+ box-shadow on Projects Portfolio*/
+#portfolio-container {
     background-color: var(--skill-col);
     border: 1px solid var(--border-colour);
     border-radius: 20px;
@@ -329,10 +344,17 @@ figcaption {
 
 /* Contact */
 #contact {
+    background-color: var(--skill-col);
+    border: 1px solid var(--border-colour);
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px var(--box-shadow);
+    display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    padding: 20px;
     width: 70%;
-    height: 200px;
+    height: 180px;
+    position: relative;
 }
 
 /* contact h2 */
@@ -390,7 +412,7 @@ figcaption {
 .contact-icon {
     display:flex;
     position:absolute;
-    top: 80%;
+    top: 75%;
     left: 18%;
     list-style: none;
 }
@@ -501,7 +523,8 @@ footer p {
     }
 }
 
-/* Media screen less than 965px */
+/*--------- Media screen less than 965px -----------*/
+
 @media screen and (max-width: 965px){
     /* hide overflow */
     *{
@@ -621,9 +644,16 @@ footer p {
     width: 90%;
     }
 
-    /* set position on contact icons */
+
+    /* set position on contact icons and social-icon*/
     .contact-icon {
-        left: 5%;
+        top: 70%;
+        left: 35%;
+    }
+
+    .social-icon {
+        top:80%;
+        left: 40%;
     }
 
     /* set overflow to hidden */
@@ -640,9 +670,22 @@ footer p {
          text-align: center;
      }
 
+     .toggler:checked ~ nav ul{
+        display: block;
+        position:absolute;
+        top:100px;
+        background-color: var(--toggler-bg);
+        height: 200px;
+        width: 50%;
+     }
+
+     nav ul li{
+         display: flex;
+     }
+
      /* set position on picture profile */
     .profile-pic {
-        left: 30%;
+        left: 10%;
     }
 
     /* set position on ids */
@@ -715,20 +758,19 @@ footer p {
 
     /* set position on class social-icon */
     .social-icon {
-        top:70%;
-        left: 35%;
+        top:60%;
+        left: 30%;
     }
 
      /* set position on class contact-icon */
     .contact-icon {
-        top: 55%;
         left: 30%;
     }
 
      /* set position on class tile-contact*/
     .tile-contact {
         display: flex;
-        flex-direction: column;
+        flex-direction: column; 
     }
 
      /* set position on portfolio-container h2 */
@@ -824,10 +866,15 @@ footer p {
         margin-top: -70px;
     }
 
-    /* set position on class social-icon */
+    /* set position on class social-icon and contact-icon*/
     .social-icon {
-        top: 70%;
-        left: 30%;
+        top: 80%;
+        left: 25%;
+    }
+
+    .contact-icon {
+        top: 55%;
+        left: 20%;
     }
 
 
