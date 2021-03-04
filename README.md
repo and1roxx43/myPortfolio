@@ -27,6 +27,23 @@ In screen size 565px, and 375px user is presented with a burger menu. When click
 
 ___
 
+## Screenshots
+
+Normal screen size
+
+![image](https://user-images.githubusercontent.com/14179472/109956762-2823af80-7d38-11eb-8a6c-7fa68a717dea.png)
+
+Ipad Screen size (768px)
+
+![image](https://user-images.githubusercontent.com/14179472/109957076-923c5480-7d38-11eb-9c5e-36b5b36bfd93.png)
+
+Phone screen size (375px)
+
+![image](https://user-images.githubusercontent.com/14179472/109957285-d4659600-7d38-11eb-8831-83d64c5fa75a.png)
+
+___
+## URL:
+
 ## Github links
 - https://github.com/and1roxx43/myPortfolio
 
