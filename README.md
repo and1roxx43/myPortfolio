@@ -42,6 +42,7 @@ Phone screen size (375px)
 ![image](https://user-images.githubusercontent.com/14179472/109957285-d4659600-7d38-11eb-8831-83d64c5fa75a.png)
 
 ___
+
 ## URL:
 
 ## Github links
