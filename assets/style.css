@@ -136,7 +136,7 @@ main{
 #about {
     border: 1px solid var(--border-colour);
     border-radius: 20px;
-    box-shadow: 2px 2px 12px var(--box-shadow);
+    box-shadow: 10px 10px 12px var(--box-shadow);
     display: flex;
     margin-left: 5%;
     padding: 20px;
@@ -192,7 +192,7 @@ main{
     background-color: var(--work-bg);
     border: 1px solid var(--border-colour);
     border-radius: 20px;
-    box-shadow: 2px 2px 12px var(--box-shadow);
+    box-shadow: 10px 10px 12px var(--box-shadow);
     margin: 2% 0 0 25%;
     width: 70%;
     display: flex;
@@ -225,7 +225,7 @@ main{
     flex-grow: 2;
     position: relative;
     border-radius: 20px;
-    box-shadow: 2px 2px 12px var(--box-shadow);
+    box-shadow: 10px 10px 12px var(--box-shadow);
 }
 
 .btn {
@@ -269,7 +269,7 @@ main{
     background-color: var(--skill-col);
     border: 1px solid var(--border-colour);
     border-radius: 20px;
-    box-shadow: 2px 2px 12px var(--box-shadow);
+    box-shadow: 10px 10px 12px var(--box-shadow);
     display: flex;
     margin: 2% 0 5% 5%;
     padding: 20px;
@@ -304,32 +304,42 @@ main{
     background-color: var(--skill-col);
     border: 1px solid var(--border-colour);
     border-radius: 20px;
-    box-shadow: 2px 2px 12px var(--box-shadow);
+    box-shadow: 10px 10px 12px var(--box-shadow);
     display:flex;
-    flex-wrap: wrap;
     align-items: center;
-    margin: 2% 0 5% 5%;
+    margin: 0 0 5% 5%;
     padding: 20px;
     width: 90%; 
-    position: relative;
 }
 
 /* Portfolio h2 sets to absolute */
-#portfolio-container h2 {
-    position: absolute;
-    top: 5%;
-    left: 5%;
+
+.portfolio-title {
+    display: flex;
+    align-self: flex-start;
+
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 /* portfolio */
-.portfolio {
+/* .portfolio {
      border-radius: 20px;
      margin:10% auto 2%;  
-}
+     width: 300px;
+     height: 300px; 
+} */
 
 /* Project images */
 .proj {
     border-radius:20px;
+    width: 350px;
+    height: 350px;
 }
 
 /* Images project when in hover state */
@@ -347,25 +357,33 @@ figcaption {
     background-color: var(--skill-col);
     border: 1px solid var(--border-colour);
     border-radius: 20px;
-    box-shadow: 2px 2px 12px var(--box-shadow);
+    box-shadow: 10px 10px 12px var(--box-shadow);
     display: flex;
-    justify-content: space-between;
     margin: 0 auto;
     padding: 20px;
     width: 70%;
-    height: 180px;
-    position: relative;
+}
+
+.contact-me {
+    justify-content: flex-start;
 }
 
 /* contact h2 */
-#contact h2 {
+/* #contact h2 {
     margin-top: -25px;
-}
+} */
 
 /* form */
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
 .user-input{
     margin-left: 5%;
-     width: 100%;
+     width: 90%;
      display: flex;
      flex-direction: column;
      justify-content: center;
@@ -399,15 +417,45 @@ figcaption {
     border: 1px solid var(--btn-border);
 }
 
+.tile-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+.contact-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.envelop {
+    margin-right: 50px;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.icon-social {
+    margin-right: 50px;
+}
 /* Contact */
-.contact-me {
+/* .contact-me {
     margin: 20px 0 0 20px;
 }
 
 .tile-contact {
     display:flex;
     flex-direction:column;
-}
+} 
 
 .contact-icon {
     display:flex;
@@ -426,14 +474,15 @@ figcaption {
     left: 45%;
     list-style: none;
 }
+*/
 
 .social-icon a i{
     color: var(--header-bg);
 }
 
-.tile-contact ul li{
+/* .tile-contact ul li{
     padding: 20px;
-}
+}  */
 
 
 /* Footer */

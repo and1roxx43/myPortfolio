@@ -45,7 +45,7 @@
                 <p>When away from my computer screen, I spend my time either walking, exercising of all types, cooking, reading stuff about technology, watching TV, mainly documentaries and marvels.</p>
                 <p>Lately I've started practicing yoga with my partner, mainly YouTube stuff.</p>
                 <section class="button">
-                    <button class="btns btn-cv"><a href="#" target="_blank">Download CV</a></button>
+                    <button class="btns btn-cv"><a href="./assets/documents/Andrew Quenette _CV_2020.pdf" target="_blank">Download CV</a></button>
                     <button class="btns btn-hire"><a href="#contact">Hire Me</a></button>
                 </section>
             </section>
@@ -69,6 +69,18 @@
                 <section class="box box3">
                     <h3>Horiseon Marketing</h3>
                     <button class="btn project3"><a href="#portfolio-container">View me</a></button>
+                </section>
+                <section class="box box3">
+                    <h3>Weather Forecast</h3>
+                    <button class="btn project4"><a href="#portfolio-container">View me</a></button>
+                </section>
+                <section class="box box3">
+                    <h3>Work Day Scheduler</h3>
+                    <button class="btn project5"><a href="#portfolio-container">View me</a></button>
+                </section>
+                <section class="box box3">
+                    <h3>Food Recipe Portal</h3>
+                    <button class="btn project6"><a href="#portfolio-container">View me</a></button>
                 </section>
             </section>
         </article>
@@ -96,14 +108,17 @@
         <!-- Portfolio section starts here -->
 
         <article id="portfolio-container">
-            <h2>Portfolio</h2>
+            <div class="portfolio-title">
+                <h2>Portfolio</h2>
+            </div>
+            <div class="portfolio-container">
             <section class="portfolio">
                 <a href="https://and1roxx43.github.io/excursion/" target="_blank">
                     <img class="proj" src="./assets/images/Excursion.png" alt="Excursion picture">
                     <figcaption>Excursion</figcaption>
                 </a>
-               
             </section>
+    
             <section class="portfolio"> 
                 <a href="https://and1roxx43.github.io/Portfolio_Project_one/" target="_blank">
                     <img class="proj" src="./assets/images/CSS_Snippet_Cheatsheet.png" 
@@ -113,10 +128,29 @@
             </section>
             <section class="portfolio">     
                 <a href="https://and1roxx43.github.io/HoriseonMarketing/" target="_blank">
-                    <img class="proj" src="./assets/images/Horiseon_Marketing.png" alt="Horiseon marketing logo">
+                    <img class="proj" src="./assets/images/Horiseon_Marketing.png" alt="Horiseon marketing">
                     <figcaption>Horiseon Marketing</figcaption>
                 </a>
             </section>
+            <section class="portfolio">     
+                <a href="https://and1roxx43.github.io/Weather-App/" target="_blank">
+                    <img class="proj" src="./assets/images/weather-Forecast.png" alt="Weather forecast">
+                    <figcaption>Weather Forecast</figcaption>
+                </a>
+            </section>
+            <section class="portfolio">     
+                <a href="https://and1roxx43.github.io/day-scheduler/" target="_blank">
+                    <img class="proj" src="./assets/images/work-day-scheduler.png" alt="Work Day Scheduler">
+                    <figcaption>Work Day Scheduler</figcaption>
+                </a>
+            </section>
+            <section class="portfolio">     
+                <a href="https://and1roxx43.github.io/Andyz-Food-Recipe-pocket/" target="_blank">
+                    <img class="proj" src="./assets/images/Pocket_Recipe_Portal.png" alt="Food Recipe Portal">
+                    <figcaption>Food Recipe Portal</figcaption>
+                </a>
+            </section>
+            </div>
         </article>
         <!-- Portfolio section end here -->
 
@@ -126,23 +160,41 @@
                 <h2>Contact</h2>
             </section>
 
-            <form class="user-input" action="#">
-                <input type="text" id="firstname" name="firstname" placeholder="First Name" maxlength="15">
-                <input type="text" name="surname" id="surname" placeholder="Last Name" maxlength="20">
-                <input type="submit" value="Submit">
-
-            </form>
-            <section class="tile-contact">
-                <ul class="contact-icon">
-                    <li><i class='fa fa-envelope'></i><a href="mailto:and1roxx43@gmail.com"> E-Mail</a></li>
-                    <li><i class="fa fa-phone " ></i><a href="tel: +61 417355571"> Phone</a></li>
-                </ul>
-                <ul class="social-icon">
-                    <li><a href="https://www.linkedin.com/in/andrew-quenette-6a3a245a/" target="_blank"><i style="font-size:24px" class="fa">&#xf08c;</i></a></li>
-                    <li><a href="https://www.facebook.com/" target="_blank"><i style="font-size:24px" class="fa">&#xf230;</i></a></li>
-                    <li><a href="https://github.com/" target="_blank"><i style="font-size:24px" class="fa">&#xf092;</i></a></li>
-                </ul>
+            <section class="contact-info">
+                <section class="form">
+                    <form class="user-input" action="#">
+                        <input type="text" id="firstname" name="firstname" placeholder="First Name" maxlength="15">
+                        <input type="text" name="surname" id="surname" placeholder="Last Name" maxlength="20">
+                        <input type="submit" value="Submit">
+                    </form>
+                </section>
+                
+                <section class="tile-contact">
+                    <ul class="contact-icon">
+                        <div class="envelop">
+                            <li><i class='fa fa-envelope'></i><a href="mailto:and1roxx43@gmail.com"> E-Mail</a></li>
+                        </div>
+                        
+                        <div class="phone">
+                            <li><i class="fa fa-phone " ></i><a href="tel: +61 417355571"> Phone</a></li>
+                        </div>
+                        
+                    </ul>
+                    <ul class="social-icon">
+                        <div class="icon-social">
+                            <li><a href="https://www.linkedin.com/in/andrew-quenette-6a3a245a/" target="_blank"><i style="font-size:24px" class="fa">&#xf08c;</i></a></li>
+                        </div>
+                        <div class="icon-social">
+                            <li><a href="https://www.facebook.com/" target="_blank"><i style="font-size:24px" class="fa">&#xf230;</i></a></li>
+                        </div>
+                        <div class="icon-social">
+                            <li><a href="https://github.com/" target="_blank"><i style="font-size:24px" class="fa">&#xf092;</i></a></li>
+                        </div>
+                        
+                    </ul>
+                </section>
             </section>
+            
         </article>
         <!-- Contact ends here -->
     </main>
