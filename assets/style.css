@@ -51,13 +51,27 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;
+    height: 150px;
     width: 100%;
 }
 /* Heading h1 element selector set to 100px margin left*/
 header h1{
     color: var(--header-title);
+    /* margin-left: 100px; */
+}
+
+#header-details{
     margin-left: 100px;
+    line-height: 2;
+}
+
+#header-details p {
+    color: var(--header-title);
+}
+
+.linkedin {
+    display: flex;
+    align-items: center;
 }
 
 /* Element selectors h1, h2, and anchor set to uppercase */
@@ -96,6 +110,10 @@ span{
 }
 
 /* nav unordered list and buttons sets to no list style, and Flexbox */
+nav {
+    margin-top: -70px;
+}
+
 nav ul, .button{
     display: flex;  
     list-style: none;
@@ -123,7 +141,7 @@ nav li:last-child{
     width: 150px;
     border-radius: 50%;
     position: absolute;
-    top:80px;
+    top:140px;
     left: 180px;
 }
 
@@ -202,8 +220,8 @@ main{
     display:flex;
     justify-content: flex-end;
     width: 20%;
-    margin:50px 60px 0 0;
-    padding: 5px 0 0 0;
+    /* margin:50px 60px 0 0; */
+    padding: 20px 0 0 20px;
 }
 
 .box-container, .tile-contact{
