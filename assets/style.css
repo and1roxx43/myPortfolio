@@ -346,17 +346,18 @@ main{
 
 .portfolio {
     display: flex;
+    justify-content: center;
     flex-grow: 2;
     width: 350px;
     height: 350px;
-    margin: 0 5px 5px 5px;
+    margin: 0 5px 35px 5px;
 }
 
 /* Project images */
 .proj {
     border-radius:20px;
     width: 100%;
-    height: 350px;
+    height: 100%;
 }
 
 /* Images project when in hover state */
@@ -525,7 +526,7 @@ footer p {
     }
 
     .portfolio {
-        margin:10% auto 5px;  
+        margin:10% 5px 5px;  
     }
 
     /* change navigation font size */
@@ -656,7 +657,12 @@ footer p {
 
     /* set margin on portfolio */
     .portfolio{
-        margin: 18% auto 1px ;
+        margin: 18% 5px 1px ;
+    }
+
+    .proj {
+        width: 100%;
+        height:90%;
     }
 
     /* set position on contact */
@@ -809,6 +815,11 @@ footer p {
         top: 15px;
         left:40%;
     }
+
+    .proj {
+        width: 100%;
+        height:90%;
+    }
 }
 
 /* --- Media screen for screen less than 375px --- */
@@ -818,6 +829,7 @@ footer p {
 
         .proj {
             width: 100%;
+            height:90%;
         }
 
         #contact {
@@ -827,9 +839,9 @@ footer p {
         .contact-me {
             margin-top: 2px;
         }
-     .contact-info{
-         margin-top: 20px;
-     }
+        .contact-info{
+            margin-top: 20px;
+        }
 
     }
     
