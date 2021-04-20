@@ -3,7 +3,7 @@ ___
 ## OVERVIEW
 
 This portfolio is to showcase my skills and talents for employers looking for a part-time or full-time position to fill.
-This portfolio highlights my projects and also the thought process behind it.
+This portfolio highlights my latest projects and also the thought process behind it. Added to this portfolio is my latest resume and my Linkedin profile.
 
 Some of the features on this webpage includes:
 
@@ -18,6 +18,7 @@ Some of the features on this webpage includes:
 - When the images of the applications is clicked, this takes to that deployed application.
 
 - When the page is resized, or when viewed on various screens and devices, the user is presented with a responsive layout that adapts to the viewport.
+
 
 ## Responsive device size
 
