@@ -827,6 +827,26 @@ footer p {
 @media screen and (max-width: 375px) { 
     @media  screen and (max-height:812px) {
 
+        #header-details h1, p {
+            text-align: left;
+        }
+        
+        #header-details h1 {
+            font-size: 1rem;
+        }
+
+        #header-details p {
+            font-size: .7rem;
+        }
+
+        .box-container{
+            width: 100%;
+        }
+
+        .portfolio {
+            width: 100%;
+        }
+
         .proj {
             width: 100%;
             height:90%;
