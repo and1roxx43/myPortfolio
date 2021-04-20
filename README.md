@@ -31,15 +31,15 @@ ___
 
 Normal screen size
 
-![image](https://user-images.githubusercontent.com/14179472/109956762-2823af80-7d38-11eb-8a6c-7fa68a717dea.png)
+![image](https://user-images.githubusercontent.com/14179472/115391758-2b5cf700-a223-11eb-91fc-b44259393416.png)!
 
 Ipad Screen size (768px)
 
-![image](https://user-images.githubusercontent.com/14179472/109957076-923c5480-7d38-11eb-9c5e-36b5b36bfd93.png)
+![image](https://user-images.githubusercontent.com/14179472/115391792-34e65f00-a223-11eb-883a-19649d5d46b6.png)
 
 Phone screen size (375px)
 
-![image](https://user-images.githubusercontent.com/14179472/109957285-d4659600-7d38-11eb-8831-83d64c5fa75a.png)
+![image](https://user-images.githubusercontent.com/14179472/115391836-40d22100-a223-11eb-95ca-e29afff0c441.png)
 
 ___
 
